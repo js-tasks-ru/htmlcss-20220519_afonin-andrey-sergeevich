@@ -1,69 +1,58 @@
 /* Стилизация кнопки */
-@import'../assets/css/main.css';
+*{
+    width: 0;
+    padding: 0;
+    margin: 0;
+}
 
 .button{
-    width: auto;
-    display: inline-block;
-    
-}
-
-.button_primary{
     width: 182px;
     height: 48px;
-    background-color: var(--blue);
     border-radius: 8px;
-    margin: 16px 16px;
-    display: block;
+    padding: 15px 15px 14px;
+    margin: 16px 32px 16px 32px;
     cursor: pointer;
+    
+    /* text*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
 }
-
-.button_primary-2:hover{
-    background: #2342C0;
-    border: 2px solid #212429; 
+.button__primary{
+    background-color: var(--blue); 
 }
-
-.button_primary-3{
+.button__primary-hover:hover{
+    background-color: var(--blue);
+}
+.button__primary-disabled{
+    background-color: var(--blue);
     opacity: 0.5;
     cursor: default;
 }
-
 .button_secondary{
-    width: 182px;
-    height: 48px;
     background: var(--purple);
-    border-radius: 8px;
-    margin: 16px 16px;
-    display: block;
-    cursor: pointer;
 }
 
 .button_secondary-2:hover{
-    background: #5028C6;
-    border: 2px solid #212429;
+    background: var(--purple);
 }
-.button_secondary-3{
+.button__secondary-disabled{
+    background: var(--purple);
     opacity: 0.5;
     cursor: default;
 }
-
-
-
 .button_alternate{ 
-    width: 182px;
-    height: 48px;
-    border: 1px solid #ACB5BD;
-    border-radius: 8px;
-    margin: 16px 16px;
-    display: block;
-    background-color: white;
+    background-color: var(--white);
+    border: 1px solid var(-grey-3);
     color: var(--black);
-    cursor: pointer;
 }
-
 .button_alternate-2:hover { 
-    border: 2px solid #212429;
+    border: 2px solid var(--black);
 }
-.button_alternate-3{
+ .button__alternate-disabled{
     color: var( --grey-4);
     cursor: default;
     opacity: 0.5;
