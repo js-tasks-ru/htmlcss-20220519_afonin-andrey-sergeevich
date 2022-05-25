@@ -1,60 +1,50 @@
 /* Стилизация аккордеона */ 
-
-details summary::-webkit-details-marker {
+*{
+    margin: 0;
+    padding: 0;
+}
+.accordion__details .accordion__item::-webkit-details-marker {
   display: none;
 }
-summary {
-    width: 500px;
-    list-style: none;
-    margin: 24px 421px 24px 24px;
-    font-family: 'Inter' Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+.accordion__item {
+    margin: 24px 419px 24px 32px;
+    list-style: none;/* убрал стрелку в google*/
 }
-details{
-    margin-top:50px;
-    margin: auto;
-    border: 1px solid #000;
-    border-radius: 5px;
-    width: 579px;
-    height: 72px;
+.accordion {
+      width: 579px;
+      height: 72px;
+      font-family: 'Inter' Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
 }
-details[open]{ 
-    width: 579px;
-    height: 168px;
-}
-
-p{
-    margin: 24px;
-    font-family: 'Inter' Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-}
-details summary::after {
-    margin-left: 350px;
-    content: url(./img/Vector.jpg); /* новая иконка */
-    color: #696f7c;
-    margin-right: 5px;
-}
-details[open] summary::after {
-    content: url(./img/Vector\ \(2\).jpg);
-    color: #696f7c;
-    width: 579px;
-    height: 168px;
-  }
- 
-  .accordion__item {
-      margin-top: 8px;
-      margin-bottom: 8px;
-}
-
-.accordion__item:last-child {
+      
+.accordion:last-child {
     margin-bottom: 0;
 }
-.accordion{
-    margin-top: 60px;
+.accordion__details{
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    height: auto;
+    margin: 8px auto;
+    
 }
+.accordion__content{
+    margin: 16px 32px 32px;
+    height: auto;
+    text-align: left;
+}
+ /* .accordion__details .accordion__item::after {
+    content: url(./img/Vector.jpg); новая иконка
+   color: #696f7c;
+   margin: 8px;
+}
+.accordion__details[open] .accordion__item::after {
+    content: url(./img/Vector\ \(2\).jpg);
+    color: #696f7c;
+    height: auto;
+    
+  }  */
+ 
+ 
