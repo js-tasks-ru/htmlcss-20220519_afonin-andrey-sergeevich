@@ -1,16 +1,6 @@
 /* Стилизация кнопки */
-*{
-    width: 0;
-    padding: 0;
-    margin: 0;
-}
-
 .button{
     width: 182px;
-    height: 48px;
-    border-radius: 8px;
-    padding: 15px 15px 14px;
-    margin: 16px 32px 16px 32px;
     cursor: pointer;
     
     /* text*/
@@ -21,38 +11,43 @@
     text-align: center;
     color: var(--white);
 }
-.button__primary{
+.button_primary, .button_primary:hover{
+    height: 48px;
+    border-radius: 8px;
+    padding: 15px 15px 14px;
+    margin: 8px 16px;
     background-color: var(--blue); 
 }
-.button__primary-hover:hover{
-    background-color: var(--blue);
-}
-.button__primary-disabled{
+.button_primary:disabled{
     background-color: var(--blue);
     opacity: 0.5;
     cursor: default;
-}
-.button_secondary{
-    background: var(--purple);
 }
 
-.button_secondary-2:hover{
-    background: var(--purple);
+.button_secondary, .button_secondary:hover{
+    height: 48px;
+    border-radius: 8px;
+    padding: 15px 15px 14px;
+    margin: 8px 16px;
+    background-color: var(--purple);
 }
-.button__secondary-disabled{
+
+.button_secondary:disabled{
     background: var(--purple);
     opacity: 0.5;
     cursor: default;
 }
-.button_alternate{ 
+.button_alternate, .button_alternate:hover{ 
+    height: 48px;
+    border-radius: 8px;
+    padding: 15px 15px 14px;
+    margin: 8px 16px;
     background-color: var(--white);
     border: 1px solid var(-grey-3);
     color: var(--black);
 }
-.button_alternate-2:hover { 
-    border: 2px solid var(--black);
-}
- .button__alternate-disabled{
+
+ .button_alternate:disabled{
     color: var( --grey-4);
     cursor: default;
     opacity: 0.5;
