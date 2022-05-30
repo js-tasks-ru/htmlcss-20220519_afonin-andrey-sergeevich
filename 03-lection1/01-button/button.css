@@ -3,8 +3,6 @@
     cursor: pointer;
     height: 48px;
     border-radius: 8px;
-    padding: 15px 15px 14px;
-    margin: 8px 16px;
     /* text*/
     font-family: 'Roboto';
     font-style: normal;
@@ -16,7 +14,6 @@
 }
 
 .button_primary{
-    width: 182px;
     background-color: var(--blue);
 }
 
@@ -25,7 +22,6 @@
 }
 
 .button_secondary{
-    width: 182px;
     background-color: var(--purple);
 }
 .button_secondary:hover{
@@ -33,7 +29,6 @@
 }
 
 .button_alternate{
-    width: 182px;
     background-color: var(--white);
     border: 1px solid var(-grey-3);
     color: var(--black);
