@@ -2,19 +2,17 @@
 
 .skeleton{
     border: 1px solid #000;
-    background-color: grey;
 }
 .skeleton__top{
     padding: 24px 24px;
-    background-color: white;
     display: flex;
     justify-content: flex-start;
+    align-items: baseline;
 }
 .skeleton__bottom{
    display: flex;
    flex-direction: column;
    padding: 24px;
-   background-color: white;
 
 }
 .skeleton__circle{
@@ -26,8 +24,6 @@
 .skeleton__line{
     background-color: grey;
     height: 20px;
-    width: 100px;
-    flex-direction: column;
     margin-bottom: 8px;
 }
 .skeleton__line_small{
@@ -42,6 +38,8 @@
 .skeleton__line_normal{
     width: 10%;
 }
-.position{
-    flex-direction: column;
+
+.line{
+width: -webkit-fill-available;
+padding-left: 16px;
 }
