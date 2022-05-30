@@ -1,10 +1,10 @@
 /* Стилизация аккордеона */ 
 
-.accordion__item::-webkit-details-marker {
+.accordion__summary::-webkit-details-marker {
   display: none;
 }
-.accordion__item {
-    padding: 24px 419px 24px 32px;
+.accordion__summary {
+    padding: 24px 32px;
     list-style: none;/* убрал стрелку в google*/
 }
 .accordion {
@@ -13,16 +13,16 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 8px;
 }
       
 .accordion:last-child {
     margin-bottom: 0;
 }
-.accordion__details{
+.accordion__item{
     border: 1px solid var(--black);
     border-radius: 8px;
     height: auto;
+    margin-bottom: 8px;
     
 }
 .accordion__content{
@@ -31,15 +31,6 @@
     text-align: left;
     margin: 0;
 }
- /* .accordion__details .accordion__item::after {
-    content: url(./img/Vector.jpg); новая иконка
-   color: #696f7c;
-   margin: 8px;
-} */
-.accordion__details[open] .accordion__item::after {
-    margin: 0;
-    padding: 24px 419px 16px 32px;;
-    
-  } 
- 
+
+
  
