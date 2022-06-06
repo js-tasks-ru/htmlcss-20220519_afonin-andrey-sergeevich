@@ -1,21 +1,6 @@
+ @import url(../../03-lection1/01-button/button.css);
 
 
-.button{
-    cursor: pointer;
-    height: 48px;
-    border-radius: 8px;
-    padding: 15px 15px 14px;
-
-
-    /* text*/
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: var(--white);
-}
 
 .button_primary{
     background-color: var(--blue);
@@ -23,23 +8,22 @@
     height: 48px;
     margin: 60px;
 }
-.window__modal-background{
+.modal-background{
     content: '';
 	position: fixed; 
 	left: 0;
 	top: 0;
 	width: 100%; 
 	height: 100%;
-	opacity: 0.7;
-    background: #C4C4C4;
-    opacity: 0.5;
+    background: rgb(196, 196, 196, 0.5);
 }
 .window__modal{
+    display: none;
     width: 428px;
     height: 294px;
     box-sizing: border-box;
     padding: 30px 40px;
-    background: #FFFFFF;
+    background: rgb(255, 255, 255);
     border: 1px solid #000;
     border-radius: 8px;
     position: absolute;
@@ -72,10 +56,10 @@
 }
 .modal__close{
     position: absolute;
-    left: 94.83%;
-    top: 4.83%;
-    width: 9.33px;
-    height: 9.33px;
+    left: 390px;
+    top: 15px;
+    width: 10px;
+    height: 10px;
     background-color: #495057;
     clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
 }
