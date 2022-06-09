@@ -1,0 +1,27 @@
+.avatar{
+    font-family: 'Roboto';
+    font-style: normal;
+    text-align: center;
+    width: auto;
+}
+.avatar__img{
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    padding: 58px 95px;
+}
+.avatar__title{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: var(--black);
+    padding: 6px;
+        
+}
+.avatar__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--grey-4);
+    
+}
