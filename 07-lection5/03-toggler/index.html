@@ -5,7 +5,20 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./toggler.css">
     </head>
-    <body>
+    <body><div class="toggler">
+        <label class="toggler__icon">
+            <input type="checkbox" class="toggler__imput">
+            <span class="toggler__slider"></span>
+             </label>
+             <span class="toggler__title">Off</span>
+        </div>
+        <div class="toggler">
+            <label class="toggler__icon">
+                <input type="checkbox" class="toggler__imput toggler__disabled" disabled>
+                <span class="toggler__slider slider__disabled"></span>
+                 </label>
+                 <span class="toggler__title">Disabled</span>
+            </div>
 
     </body>
 </html>

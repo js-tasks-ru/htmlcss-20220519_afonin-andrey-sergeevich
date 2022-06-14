@@ -1,0 +1,78 @@
+
+.toggler{    
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px;
+}
+
+.toggler__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057;
+
+}
+.toggler__disabled{
+    background: rgb(221, 226, 229,0.25);
+}
+
+
+/* The switch - the box around the slider */
+.toggler__icon {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 29px;
+ 
+  }
+  
+  /* Hide default HTML checkbox */
+  .toggler__icon input {display:none;}
+
+  
+  /* The slider */
+  .toggler__slider {
+    box-sizing: border-box;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    border:0.5px solid #DDE2E5; 
+    border-radius: 16px;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .toggler__slider:before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #DDE2E5;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .toggler__imput:checked + .toggler__slider {
+    background-color: #2196F3;
+  }
+  
+  .toggler__imput:focus + .toggler__slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  .toggler__imput:checked + .toggler__slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+  }
+  
