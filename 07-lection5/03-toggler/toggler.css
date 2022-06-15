@@ -1,4 +1,3 @@
-
 .toggler{    
     display: flex;
     align-items: center;
@@ -25,7 +24,7 @@
     position: relative;
     display: inline-block;
     width: 52px;
-    height: 29px;
+    height: 28px;
  
   }
   
@@ -43,7 +42,7 @@
     right: 0;
     bottom: 0;
     background: #ffffff;
-    border:0.5px solid #DDE2E5; 
+    border: 1px solid #DDE2E5; 
     border-radius: 16px;
     -webkit-transition: .4s;
     transition: .4s;
@@ -54,23 +53,27 @@
     content: "";
     width: 24px;
     height: 24px;
-    left: 2px;
-    bottom: 2px;
+    left: 1px;
+    top: 1px;
     background-color: #DDE2E5;
     border-radius: 50%;
     -webkit-transition: .4s;
     transition: .4s;
   }
+
+  .toggler__input:checked {
+      opacity: .5;
+  }
   
-  .toggler__imput:checked + .toggler__slider {
+  .toggler__input:checked + .toggler__slider {
     background-color: #2196F3;
   }
   
-  .toggler__imput:focus + .toggler__slider {
+  .toggler__input:focus + .toggler__slider {
     box-shadow: 0 0 1px #2196F3;
   }
   
-  .toggler__imput:checked + .toggler__slider:before {
+  .toggler__input:checked + .toggler__slider:before {
     -webkit-transform: translateX(24px);
     -ms-transform: translateX(24px);
     transform: translateX(24px);
