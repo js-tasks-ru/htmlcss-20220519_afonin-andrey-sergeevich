@@ -1,35 +1,64 @@
- .radio{
-    cursor: pointer;
-    display:inline-flex;
-    align-items: center;
-    gap: 12px;
-   
-}
-.radio__imput{
-    box-sizing: border-box;
-    width: 28px;
-    height: 28px;
-    background: #FFFFFF;
-    border: 1px solid #DDE2E5;
-    border-radius: 14px; 
-}
-.radio__title{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #495057; 
-     
-} 
-.radio__imput:checked {
-    border: 2px solid #4263EB;
-  }
-.radio_disabled:disabled{
-    background: #DDE2E5;
-    border-radius: 14px;
+
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.title_disabled{
-    color: var(--grey-2);
-}  
+.radio + .radio {
+  margin-top: 16px;
+}
+
+.radio__imput {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio__shell {
+  display: inline-flex;
+  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--grey-2);
+  border-radius: 14px;
+  padding: 3px;
+}
+
+.radio__core {
+  width: 18px;
+  height: 18px;
+}
+
+.radio__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+}
+
+.radio__imput:checked + .radio__shell {
+  border: 2px solid var(--blue);
+  border-radius: 14px;
+}
+
+.radio__imput:checked + .radio__shell > .radio__core {
+  background: var(--blue);
+  border-radius: 14px;
+}
+.radio__imput:focus ~ .radio__title {
+  text-decoration: underline;
+}
+
+.radio__imput:disabled + .radio__shell {
+  background: var(--grey-2);
+  border-radius: 14px;
+}
+
+.radio__imput:disabled ~ .radio__title {
+  color: var(--grey-2);
+}
