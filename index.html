@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <!-- Главная страница -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="./assets/css/main.css">
-    </head>
-    <body>
-       <div class="page">
-           
-            <header class="header">
-            <div class="container"></div>
-                <div class=" header__logo">
-                   <img src="./components/img/RectangleSquare.jpg" alt="logo">
-                   <img src="./components/img/RectangleCircle.jpg" alt="logo">
-                   <img src="./components/img/RectangleTriangle.jpg" alt="logo">
-        
-                
-                   <p>Components About Contact</p>  
-                </div>
-              
-                <h1 class="header__title">Reusable component library</h1>
-            </div>
-            </header>
-            
-            
-            <main>
-
-            </main>
-            <footer class="footer">
-
-            </footer>
-        </div>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <h1 class="header__title">Reusable component library</h1>
+        <span class="header__accardion">
+          <details class="accordion accordion__details">
+            <summary class="accordion__item">Elements</summary>
+            <p class="accordion__content">Avatar</p>
+            <p class="accordion__content">Custom form elements</p>
+            <p class="accordion__content">Button</p>
+            <p class="accordion__content">Avatar</p>
+            <p class="accordion__content">Custom form elements</p>
+            <p class="accordion__content">Button</p>
+          </details>
+          <details class="accordion accordion__details">
+            <summary class="accordion__item">Containers</summary>
+            <p class="accordion__content">Avatar</p>
+            <p class="accordion__content">Custom form elements</p>
+            <p class="accordion__content">Button</p>
+            <p class="accordion__content">Avatar</p>
+            <p class="accordion__content">Custom form elements</p>
+            <p class="accordion__content">Button</p>
+          </details>
+          <details class="accordion accordion__details">
+            <summary class="accordion__item">Templates</summary>
+            <p class="accordion__content">Avatar</p>
+            <p class="accordion__content">Custom form elements</p>
+            <p class="accordion__content">Button</p>
+            <p class="accordion__content">Avatar</p>
+            <p class="accordion__content">Custom form elements</p>
+            <p class="accordion__content">Button</p>
+          </details>
+        </span>
+        <span class="header__menu">
+          <p class="header__menu__text">About</p>
+          <p class="header__menu__text">Contact</p>
+        </span>
+        <span class="header__logo">
+          <img
+            src="./components/header/logo.svg"
+            alt="logo"
+            class="logo__svg"
+          />
+        </span>
+        <span class="header__team"></span>
+      </div>
+    </div>
+  </body>
 </html>

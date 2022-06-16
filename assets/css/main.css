@@ -5,6 +5,7 @@
 @import '../../components/page/page.css';
 @import '../../components/preview/preview.css';
 @import '../../components/container/container.css';
+@import '../../components/header/accardion.css';
 
 
 :root {
@@ -31,8 +32,7 @@
 }
 
 html, body {
-    height: 100%;
-    background: #374FC7;
+
 }
 
 

@@ -1,0 +1,22 @@
+.accordion{
+    display: inline-flex;
+
+} 
+.accordion__details{
+dis
+}
+.accordion__item{
+    list-style: none;
+    height: 152px;
+    
+}
+.accordion__content{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--black);
+    width: 229px;
+}
+
