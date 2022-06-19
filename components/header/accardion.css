@@ -1,13 +1,12 @@
 .accordion{
-    display: inline-flex;
 
 } 
 .accordion__details{
-dis
+
 }
 .accordion__item{
     list-style: none;
-    height: 152px;
+
     
 }
 .accordion__content{
