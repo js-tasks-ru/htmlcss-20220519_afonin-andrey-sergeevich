@@ -3,11 +3,7 @@
 .radio {
   display: flex;
   align-items: center;
-  gap: 12px;
-}
-
-.radio + .radio {
-  margin-top: 16px;
+  
 }
 
 .radio__imput {
@@ -18,6 +14,7 @@
 }
 
 .radio__shell {
+  margin: 12px;
   display: inline-flex;
   box-sizing: border-box;
   width: 28px;
@@ -55,10 +52,7 @@
 }
 
 .radio__imput:disabled + .radio__shell {
-  background: var(--grey-2);
-  border-radius: 14px;
+ pointer-events: none;
 }
 
-.radio__imput:disabled ~ .radio__title {
-  color: var(--grey-2);
-}
+
