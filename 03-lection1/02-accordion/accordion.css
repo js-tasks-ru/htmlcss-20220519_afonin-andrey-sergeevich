@@ -26,5 +26,9 @@
     margin: 0;
 }
 
+.accordion__item[open] .accordion__summary  {
+    padding-bottom: 16px;
+} 
+
 
  
