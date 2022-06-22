@@ -1,6 +1,8 @@
 .toggler {
   display: flex;
   align-items: center;
+  
+  gap: 12px;
 }
 .toggler__checkbox {
   position: absolute;
@@ -9,7 +11,6 @@
   width: 0;
 }
 .toggler__container {
-  margin: 12px;
   display: inline-block;
   box-sizing: border-box;
   width: 52px;
