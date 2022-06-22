@@ -1,5 +1,4 @@
 .checkbox {
-  /* position: relative; */
   display: flex;
 }
 .checkbox__imput {
@@ -7,7 +6,6 @@
   clip: rect(0, 0, 0, 0);
 }
 .checkbox__state {
-  margin: 12px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -15,8 +13,8 @@
 }
 .checkbox__control {
   box-sizing: border-box;
-  background: #ffffff;
-  border: 1px solid #dde2e5;
+  background: var(--white);
+  border: 1px solid var(--grey-2);
   border-radius: 4px;
   width: 28px;
   height: 28px;
@@ -33,11 +31,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #495057;
+  color: var(--grey-4);
 }
 .checkbox__imput:checked ~ .checkbox__state .checkbox__control {
-  background: #4263eb;
-  border-color: #4263eb;
+  background: var(--blue);
+  border-color: var(--blue);
 }
 .checkbox__imput:checked ~ .checkbox__state .checkbox__icon {
   display: block;
