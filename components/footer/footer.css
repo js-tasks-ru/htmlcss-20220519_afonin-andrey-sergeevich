@@ -1,0 +1,24 @@
+.footer {
+  
+  font-family: 'Inter';
+  font-style: normal;
+  color: var(--black);
+  text-align: center;
+  padding-bottom: 136px;
+  
+}
+
+.footer__title {
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.footer__text {
+  display: inline-flex;
+  width: 640px;
+  height: 96px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}

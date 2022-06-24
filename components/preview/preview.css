@@ -1,0 +1,27 @@
+.preview {
+  padding-left: 165px;
+  padding-top: 68px ;
+  padding-bottom: 204px;
+  width: auto;
+  background: #F9FAFC
+ 
+
+}
+.container__card {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:30px;
+}
+
+.card {
+  display: inline-flex;
+  margin: 0;
+  width: 350px;
+  height: 367px;
+  background: var(--white);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
+}
