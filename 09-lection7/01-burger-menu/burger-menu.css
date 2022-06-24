@@ -1,0 +1,37 @@
+.burger{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vw;
+  width: 100vw;
+  background-color: rgb(255, 0, 0, 0.5);
+  transform: translateX(-100vw);
+  transition: transform 0.3s ease-in-out;
+}
+.burger[data-open] {
+  transform: translateX(0);
+}
+
+.burger__iconMenu {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./iconMenu.svg');
+}
+.burger__iconClose {
+  background-image: url('./iconClose.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--grey-2);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 5px;
+}
