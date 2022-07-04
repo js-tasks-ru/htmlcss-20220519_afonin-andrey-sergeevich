@@ -50,7 +50,7 @@
   cursor: pointer;
 }
 
-.modal__container {
+.modal{
   display: none;
   background-color: rgba(196, 196, 196, 0.5);
   content: '';
