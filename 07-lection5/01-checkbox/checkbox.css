@@ -1,3 +1,4 @@
+
 .checkbox {
   display: flex;
 }
@@ -46,3 +47,4 @@
 .checkbox__imput:disabled ~ .checkbox__state {
   pointer-events: none;
 }
+
